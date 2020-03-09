@@ -13,9 +13,19 @@
 		83D130ED2414AF80007EC200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D130EC2414AF80007EC200 /* Assets.xcassets */; };
 		83D130F02414AF80007EC200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D130EF2414AF80007EC200 /* Preview Assets.xcassets */; };
 		83D130F32414AF80007EC200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D130F12414AF80007EC200 /* LaunchScreen.storyboard */; };
+		83D131252414BF39007EC200 /* Color+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131242414BF39007EC200 /* Color+AppColor.swift */; };
+		83D131272414C16C007EC200 /* LinearGradient+Variadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131262414C16C007EC200 /* LinearGradient+Variadic.swift */; };
+		83D131292414F491007EC200 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131282414F491007EC200 /* PrimaryButtonStyle.swift */; };
+		83D1312B241500C2007EC200 /* DarkNeoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1312A241500C2007EC200 /* DarkNeoBackground.swift */; };
+		83D1312D241500E9007EC200 /* NeoDarkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1312C241500E9007EC200 /* NeoDarkButtonStyle.swift */; };
+		83D1312F24150AA4007EC200 /* FavouriteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1312E24150AA4007EC200 /* FavouriteCard.swift */; };
+		83D131312415393C007EC200 /* CardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131302415393C007EC200 /* CardButtonStyle.swift */; };
+		83D131332415395A007EC200 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131322415395A007EC200 /* CardBackground.swift */; };
+		83D131352415399F007EC200 /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D131342415399F007EC200 /* PlaylistsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832458442415F1210077F537 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83D130E32414AF7F007EC200 /* Neo Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neo Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D130E62414AF7F007EC200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D130E82414AF7F007EC200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,15 @@
 		83D130EF2414AF80007EC200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83D130F22414AF80007EC200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D130F42414AF80007EC200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D131242414BF39007EC200 /* Color+AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColor.swift"; sourceTree = "<group>"; };
+		83D131262414C16C007EC200 /* LinearGradient+Variadic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Variadic.swift"; sourceTree = "<group>"; };
+		83D131282414F491007EC200 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		83D1312A241500C2007EC200 /* DarkNeoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkNeoBackground.swift; sourceTree = "<group>"; };
+		83D1312C241500E9007EC200 /* NeoDarkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoDarkButtonStyle.swift; sourceTree = "<group>"; };
+		83D1312E24150AA4007EC200 /* FavouriteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCard.swift; sourceTree = "<group>"; };
+		83D131302415393C007EC200 /* CardButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonStyle.swift; sourceTree = "<group>"; };
+		83D131322415395A007EC200 /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
+		83D131342415399F007EC200 /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +59,7 @@
 		83D130DA2414AF7F007EC200 = {
 			isa = PBXGroup;
 			children = (
+				832458442415F1210077F537 /* README.md */,
 				83D130E52414AF7F007EC200 /* Neo Music */,
 				83D130E42414AF7F007EC200 /* Products */,
 			);
@@ -57,12 +77,21 @@
 			isa = PBXGroup;
 			children = (
 				83D130E62414AF7F007EC200 /* AppDelegate.swift */,
+				83D131342415399F007EC200 /* PlaylistsView.swift */,
 				83D130E82414AF7F007EC200 /* SceneDelegate.swift */,
 				83D130EA2414AF7F007EC200 /* ContentView.swift */,
 				83D130EC2414AF80007EC200 /* Assets.xcassets */,
 				83D130F12414AF80007EC200 /* LaunchScreen.storyboard */,
 				83D130F42414AF80007EC200 /* Info.plist */,
 				83D130EE2414AF80007EC200 /* Preview Content */,
+				83D131242414BF39007EC200 /* Color+AppColor.swift */,
+				83D131262414C16C007EC200 /* LinearGradient+Variadic.swift */,
+				83D131282414F491007EC200 /* PrimaryButtonStyle.swift */,
+				83D1312A241500C2007EC200 /* DarkNeoBackground.swift */,
+				83D1312C241500E9007EC200 /* NeoDarkButtonStyle.swift */,
+				83D1312E24150AA4007EC200 /* FavouriteCard.swift */,
+				83D131302415393C007EC200 /* CardButtonStyle.swift */,
+				83D131322415395A007EC200 /* CardBackground.swift */,
 			);
 			path = "Neo Music";
 			sourceTree = "<group>";
@@ -146,9 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D131292414F491007EC200 /* PrimaryButtonStyle.swift in Sources */,
+				83D131272414C16C007EC200 /* LinearGradient+Variadic.swift in Sources */,
+				83D1312B241500C2007EC200 /* DarkNeoBackground.swift in Sources */,
+				83D131312415393C007EC200 /* CardButtonStyle.swift in Sources */,
 				83D130E72414AF7F007EC200 /* AppDelegate.swift in Sources */,
+				83D1312D241500E9007EC200 /* NeoDarkButtonStyle.swift in Sources */,
+				83D131352415399F007EC200 /* PlaylistsView.swift in Sources */,
+				83D131252414BF39007EC200 /* Color+AppColor.swift in Sources */,
 				83D130E92414AF7F007EC200 /* SceneDelegate.swift in Sources */,
+				83D131332415395A007EC200 /* CardBackground.swift in Sources */,
 				83D130EB2414AF7F007EC200 /* ContentView.swift in Sources */,
+				83D1312F24150AA4007EC200 /* FavouriteCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
