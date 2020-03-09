@@ -10,6 +10,42 @@ import SwiftUI
 
 struct PlaylistsView: View {
     @State var isPlaying = false
+    
+    var saprator: some View{
+        Rectangle()
+            .fill(Color.gray.opacity(0.2))
+        .frame(height: 1)
+        .frame(minWidth: 0,maxWidth: .infinity)
+    }
+    
+    var recommended: some View{
+        GeometryReader{ geo in
+            VStack(alignment: .leading){
+                Text("Recommended")
+                    .font(.title)
+                    .bold()
+                    .padding(.horizontal)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 30){
+                        ForEach([1,2,3,4,5], id: \.self) { _ in
+                            RecommendedView(title: "Title", genre: "Genre", icon: Image(systemName: "star.fill"), action: {
+                                
+                            })
+                            .frame(
+                                width: (geo.size.width - 60) * (2/3),
+                                height: (geo.size.width - 60) * 0.5)
+                                .padding(.vertical,30)
+                        }
+                        
+                        
+                    }
+                    .padding(.horizontal,30)
+                }
+                
+            }
+        }
+    }
+    
     var body: some View {
         GeometryReader{ geo in
             NavigationView{
@@ -24,59 +60,8 @@ struct PlaylistsView: View {
                                 width: geo.size.width - 60,
                                 height: (geo.size.width - 60) * 0.5)
                                 .padding(.vertical,30)
-                            
-                            Rectangle()
-                                .fill(Color.gray.opacity(0.2))
-                                .frame(width: geo.size.width, height: 1)
-                            VStack(alignment: .leading){
-                                Text("Recommended")
-                                    .font(.title)
-                                    .bold()
-                                    .padding(.horizontal)
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    HStack(spacing: 30){
-                                        ForEach([1,2,3,4,5], id: \.self) { _ in
-                                            Button(action: {
-                                                
-                                            }) {
-                                                HStack{
-                                                    VStack{
-                                                        Button(action: {
-                                                            
-                                                        }) {
-                                                            Image(systemName: "star.fill")
-                                                                .foregroundColor(.gray)
-                                                        }
-                                                        .buttonStyle(NeoDarkButtonStyle())
-                                                        .padding(.horizontal)
-                                                        Spacer()
-                                                        VStack(alignment: .leading){
-                                                            Text("Title")
-                                                                .font(.headline)
-                                                            Text("Genre")
-                                                                .font(.subheadline)
-                                                                .foregroundColor(Color(UIColor.secondaryLabel))
-                                                        }
-                                                        .padding(.leading)
-                                                    }
-                                                    
-                                                    Spacer()
-                                                }.padding(.vertical)
-                                                
-                                            }
-                                            .buttonStyle(CardButtonStyle(shape: RoundedRectangle(cornerRadius: 20)))
-                                            .frame(
-                                                width: (geo.size.width - 60) * (2/3),
-                                                height: (geo.size.width - 60) * 0.5)
-                                                .padding(.vertical,30)
-                                        }
-                                        
-                                        
-                                    }
-                                    .padding(.horizontal,30)
-                                }
-                                
-                            }
+                            self.saprator
+                            self.recommended
                         }
                         .padding(.top, 50)
                         .navigationBarTitle("Playlists")
